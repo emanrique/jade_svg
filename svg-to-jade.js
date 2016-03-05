@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 "use strict";
 
-const SVGManager = require('./libs/svg-manager');
-let sVGManager = new SVGManager('./images/test.svg');
+class SVGToJade {
 
-sVGManager
-	.readFile()
-	.then(() => {
-		return sVGManager.optimize();
-	})
-	.then(() => {
-		console.log('svg', sVGManager.getSVGString());
-	});
+	getSVGCode(file_path) {
+		const SVGManager = require('./libs/svg-manager');
+		let sVGManager = new SVGManager(file_path);
+
+		return sVGManager
+			.readFile()
+			.then(() => {
+				return sVGManager.optimize();
+			})
+			.then(() => {
+				 return sVGManager.getSVGString();
+			});
+	}
+}
+
+module.export = SVGToJade;
