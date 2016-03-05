@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 "use strict";
 
-const SVGParser = require('./svg-parse');
-const svgParser = new SVGParser('./images/test.svg');
+const SVGManager = require('./libs/svg-manager');
+let sVGManager = new SVGManager('./images/test.svg');
 
-svgParser
+sVGManager
 	.readFile()
 	.then(() => {
-		return svgParser.optimize();
+		return sVGManager.optimize();
 	})
 	.then(() => {
-		console.log('svg',svgParser.getSVGString());
+		console.log('svg', sVGManager.getSVGString());
 	});
