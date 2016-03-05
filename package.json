@@ -15,6 +15,9 @@
     "svg",
     "jade"
   ],
+  "scripts": {
+    "test": "make test"
+  },
   "author": {
     "name": "elizabeth manrique",
     "email": "ecmanrique@gmail.com",
@@ -29,6 +32,7 @@
     "nr": "./svg-to-jade.js"
   },
   "devDependencies": {
+    "ava": "^0.12.0",
     "svgo": "^0.6.1"
   }
 }
