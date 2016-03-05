@@ -1,0 +1,34 @@
+{
+  "name": "npm-svg-to-jade",
+  "version": "1.0.9",
+  "description": "convert svg file to inline code in jade",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "svg-to-jade.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanrique/svg-to-jade.git"
+  },
+  "keywords": [
+    "npm",
+    "svg",
+    "jade"
+  ],
+  "author": {
+    "name": "elizabeth manrique",
+    "email": "ecmanrique@gmail.com",
+    "url": "http://emanrique.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emanrique/svg-to-jade/issues"
+  },
+  "homepage": "https://github.com/emanrique/svg-to-jade#readme",
+  "bin": {
+    "nr": "./svg-to-jade.js"
+  },
+  "devDependencies": {
+    "svgo": "^0.6.1"
+  }
+}
