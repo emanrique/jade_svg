@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 "use strict";
+import SVGManager from './libs/svg-manager';
 
 class SVGToJade {
 
 	getSVGCode(file_path) {
-		const SVGManager = require('./libs/svg-manager');
 		let sVGManager = new SVGManager(file_path);
 
 		return sVGManager
